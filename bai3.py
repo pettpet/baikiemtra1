@@ -1,13 +1,9 @@
-def tinhgiaithua(n):
-    giai_thua = 1;
-    if (n == 0 or n == 1):
-        return giai_thua;
-    else:
-        for i in range(2, n + 1):
-            giai_thua = giai_thua * i;
-        return giai_thua;
-n = int(input("Giai thừa n = "));
-if n <= 0:
- print("Nhập lại")
+print("Nhập giá trị n: ",end='')
+n=int(input())
+if n > 0:
+    giaithua=1
+    for i in range(1,n+1):
+        giaithua=giaithua*i
+    print(n,"giai thừa bằng:",giaithua)
 else:
-   print("Giai thừa của", n, "là", tinhgiaithua(n))
+    print("Vui lòng nhập n > 0")
