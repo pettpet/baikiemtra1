@@ -1,7 +1,6 @@
 import pandas as pd
-import numpy as np
-data = np.array(['a','b','c','d'])
-s = pd.Series(data,index=[100,101,102,103])
-print(s)
-#in ra dong dau tien
-print(s.head(1))
+data_frame={"a":[1,2,3,4,5],"b":[6,7,8,9,10],"c":[-11,-51,62,32,74],"d":[31,35,6,3,7]}
+df=pd.DataFrame(data_frame)
+print(data_frame)
+"in ra dong dau"
+print(df["a"])
